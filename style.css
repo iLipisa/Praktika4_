@@ -1,0 +1,160 @@
+/* Общие стили для body */
+.body-class {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* Стили для header */
+header {
+  background-color: #0066cc;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: 1px solid #0066cc;
+  margin: 0;
+}
+
+/* Стили для main */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+/* Стили для видео */
+.video-pleer {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+/* Стили для заголовков */
+.section-title {
+  color: #0066cc;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  color: #0066cc;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Стили для диалогового окна */
+#myDialog {
+  width: 80%;
+  max-width: 600px;
+  border: 2px solid #0066cc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+#myDialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#myDialog button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#myDialog button:hover {
+  background-color: #0055aa;
+}
+
+/* Стили для секций */
+#info, #services, #contacts {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.about-company, .services, .contacts {
+  color: #0066cc;
+  border-bottom: 2px solid #0066cc;
+  padding-bottom: 10px;
+}
+
+/* Стили для изображений */
+.picture2, .picture3, .picture4, .picture5 {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+}
+
+/* Стили для списков */
+ol {
+  padding-left: 20px;
+}
+
+/* Стили для footer */
+footer {
+  background-color: #0066cc;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+  
+  header h1 {
+      font-size: 1.5em;
+  }
+  
+  .section-title, .modal-title {
+      font-size: 1.3em;
+  }
+}
